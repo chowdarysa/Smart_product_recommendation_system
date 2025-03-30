@@ -34,7 +34,9 @@ By continuously sending user interaction events to Amazon Personalize, the syste
 ```bash
 git clone https://github.com/chowdarysa/Smart_product_recommendation_system.git
 cd SmartProductRecommendation
+```
 4.2 Front-End Setup
+```
 cd frontend
 npm install
 # or
@@ -42,24 +44,31 @@ npm install
 
 # To start the development server:
 npm start
+```
 4.3 Back-End Setup
+```
 cd ../backend
 npm install
 
 # Depending on your deployment workflow (Serverless Framework, AWS SAM, etc.):
 npm run deploy
+```
 Make sure you configure environment variables or credentials. Do not commit your .env to GitHub.
 5. Deployment Procedures
 
 Build the Front-End:
+```
 cd frontend
 npm run build
+```
 Deploy the generated build folder to an S3 bucket or an AWS Amplify app for hosting.
 Deploy the Back-End:
 Using Serverless Framework, AWS SAM, or AWS CLI: set up your Lambda functions, API Gateway endpoints, and DynamoDB tables.
 Example (Serverless Framework):
+```
 cd backend
 sls deploy
+```
 Ensure your AWS credentials are properly configured.
 6. Testing Procedures
 
@@ -74,9 +83,6 @@ Use Postman or cURL to test your API Gateway endpoints, for example:
 curl -X GET https://<api-id>.execute-api.<region>.amazonaws.com/production/fetch_items
 Check CloudWatch logs to verify that Lambda functions are invoked without errors.
 Ensure that you have valid API keys if your endpoints are protected by API Gateway.
-7. Project Timeline & Risk Assessment (Optional)
-
-(Include any relevant timeline or risk assessment info if helpful, such as a breakdown of milestones or known risks.)
 
 8. Security Considerations
 
