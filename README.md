@@ -87,12 +87,7 @@ Ensure that you have valid API keys if your endpoints are protected by API Gatew
 API Key Protection: If your endpoints require an API key, note that storing it in the front-end can expose it to users. Consider a dedicated backend or usage plan.
 IAM Roles: Ensure each Lambda has least-privilege permissions to DynamoDB and Personalize.
 HTTPS: Enforce HTTPS (via API Gateway) to protect data in transit.
-9. License
 
-(Choose a license, e.g., MIT or Apache 2.0.)
-
-MIT License
-[License text here...]
 10. Contact / Contributing
 
 Maintainer: Your Name (saiteja200052@gmail.com)
