@@ -37,7 +37,6 @@ cd SmartProductRecommendation
 ```
 4.2 Front-End Setup
 ```
-cd frontend
 npm install
 # or
 # yarn install
@@ -47,7 +46,7 @@ npm start
 ```
 4.3 Back-End Setup
 ```
-cd ../backend
+cd backend
 npm install
 
 # Depending on your deployment workflow (Serverless Framework, AWS SAM, etc.):
@@ -58,7 +57,6 @@ Make sure you configure environment variables or credentials. Do not commit your
 
 Build the Front-End:
 ```
-cd frontend
 npm run build
 ```
 Deploy the generated build folder to an S3 bucket or an AWS Amplify app for hosting.
@@ -73,7 +71,7 @@ Ensure your AWS credentials are properly configured.
 6. Testing Procedures
 
 6.1 Local Testing
-Front-End: Run npm start in the frontend/ folder and visit http://localhost:3000/.
+Front-End: Run npm run dev in the  and visit http://localhost:5173/.
 Back-End (Optional):
 If using serverless-offline:
 npm run offline
